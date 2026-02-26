@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+ 
+ 
+<!--Greeting-->    
+  <category>
+    <pattern>*</pattern>
+    <template>
+        Hello! I'm your Virtual Career Advisor for Computer Science. 
+        I can help explore careers in computing that match your strengths and interests.
+        Would you like to begin?
+    </template>
+  </category>
+  
+<!--Strengths-->  
+  <category>
+    <pattern>YES</pattern>
+    <template>
+        Great do you prefer: <br/>
+        1. Building software<br/>
+        2. Working with data<br/>
+        3. Securing systems<br/>
+        4. Managing networks<br/>
+        5. Designing websites
+    </template>
+  </category>
+  
+  <category>
+    <pattern>OTHER</pattern>
+    <template>
+        <srai>YES</srai>
+    </template>
+</category>
+ 
+<!--Goodbye Message-->  
+  <category>
+    <pattern>SATISFIED</pattern>
+    <template>
+        I'm glad we could explore your career options!<br></br> 
+        Best of luck as you pursue your chosen path!<br></br>
+        Thank you for using the Virtual Career Advisor service. <br></br>
+        Have a great day!
+    </template>
+  </category>
+  
+  <category>
+    <pattern>NO</pattern>
+    <template>
+        <srai>SATISFIED</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>BYE</pattern>
+    <template>
+        <srai>SATISFIED</srai>
+    </template>
+</category>
+  
+<!-- Software Developer Selection -->
+    <category>
+      <pattern>1</pattern>
+      <template>
+        <think><set name="topic">softwareDeveloper</set></think>
+        Great choice!
+        If you also enjoy problem-solving and analytical thinking 
+        you may enjoy being a Software Developer!<br></br>
+        Would you like MORE information on jobs in software development?<br></br>
+        Or would you like to explore OTHER careers?
+      </template>
+    </category>
+    
+    <category>
+        <pattern>BUILDING *</pattern>
+        <template>
+            <srai>1</srai>
+        </template>
+    </category>
+    
+    <topic name ="softwareDeveloper">
+        
+      <category>
+        <pattern>MORE</pattern>
+        <template>
+        A Software Developer designs and builds applications. <br></br>
+        Most employer's require a Bachelor's degree in Computer Science. <br></br>
+        Entry-level Software Developers typically earn around $80,000 per year.<br></br>
+        Would you like the NEXT steps you could take to explore software development, 
+        or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+      <category>
+        <pattern>NEXT</pattern>
+        <template>
+        Build a portfolio with personal coding projects.<br></br>
+        Practice data structures and algorithms.<br></br>
+        Apply for internships or entry-level developer roles.<br></br>
+        Gaining hands-on experience will strengthen your qualifications.
+        Are you SATISFIED with our session, or would you like to explore OTHER careers?
+        </template>
+      </category>
+    </topic>
+    
+<!-- Data Analyst Selection -->
+    <category>
+      <pattern>2</pattern>
+      <template>
+        <think><set name="topic">dataAnalyst</set></think>
+        Great choice!
+        If you also enjoy statistics and visualizing data sets 
+        you may enjoy being a Data Analyst!<br></br>
+        Would you like MORE information on jobs in analyzing data?<br></br>
+        Or would you like to explore OTHER careers?
+      </template>
+    </category>
+    
+    <category>
+        <pattern>WORKING *</pattern>
+        <template>
+            <srai>2</srai>
+        </template>
+    </category>
+    
+    <topic name ="dataAnalyst">
+        
+      <category>
+        <pattern>MORE</pattern>
+        <template>
+        A Data Analyst collects, processes and interprets data to help organizations make informed decisions.<br></br>
+        Most employer's require a Bachelor's degree in Computer Science, Data Science, or Statistics. <br></br>
+        Entry-level salaries typically earn around $75,000 per year.<br></br>
+        Would you like the NEXT steps you could take to explore analyzing data, 
+        or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+       <category>
+        <pattern>NEXT</pattern>
+        <template>
+        Strengthen your skills in SQL and Python.<br></br>
+        Practice analyzing datasets and creating visualizations using tools like Excel.<br></br>
+        Build a portfolio showcasing data projects and case studies.<br></br>
+        Gaining hands-on experience with real datasets will help you stand out to employers.
+        Are you SATISFIED with our session, or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+    </topic>
+    
+<!-- CyberSecurity Analyst Selection-->
+    <category>
+      <pattern>3</pattern>
+      <template>
+        <think><set name="topic">cyberSecurity</set></think>
+        Great choice!
+        If you also enjoy monitoring systems, and identifying vulnerabilities 
+        you may enjoy being a CyberSecurity Analyst!<br></br>
+        Would you like MORE information on jobs in CyberSecurity?<br></br>
+        Or would you like to explore OTHER careers?
+      </template>
+    </category>
+    
+    <category>
+        <pattern>SECURING *</pattern>
+        <template>
+            <srai>3</srai>
+        </template>
+    </category>
+    
+    <topic name ="cyberSecurity">
+        
+      <category>
+        <pattern>MORE</pattern>
+        <template>
+        A CyberSecurity Analyst protects computer systems and networks from cyber threats and unauthorized users.<br></br>
+        Most employer's require a Bachelor's degree in Computer Science, Cybersecurity, or related fields. <br></br>
+        Entry-level CyberSecurity Analysts typically earn around $85,000 per year.
+        Would you like the NEXT steps you could take to explore cyberSecurity, <br></br>
+        or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+      <category>
+        <pattern>NEXT</pattern>
+        <template>
+        Strengthen your understanding in networking, operating systems, and security fundamentals.<br></br>
+        Practice using security tools and learn common vulnerabilities.<br></br>
+        Consider earning entry-level certifications, such as Security+.<br></br>
+        Hands-on experience with security knowledge will help you become competitive in this field.
+        Are you SATISFIED with our session, or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+    </topic>
+    
+<!-- Systems Administrator Selection-->
+    <category>
+      <pattern>4</pattern>
+      <template>
+        <think><set name="topic">systemAdmin</set></think>
+        Great choice!
+        If you also enjoy maintaining servers, and operating systems 
+        you may enjoy being a Systems Administrator!<br></br>
+        Would you like MORE information on jobs in administering system designs?<br></br>
+        Or would you like to explore OTHER careers?
+      </template>
+    </category>
+    
+    <category>
+        <pattern>MANAGING *</pattern>
+        <template>
+            <srai>4</srai>
+        </template>
+    </category>
+    
+    <topic name ="systemAdmin">
+        
+      <category>
+        <pattern>MORE</pattern>
+        <template>
+        A Systems Administrator manages and maintains an organization's computer systems, servers and networks. <br></br>
+        Most employer's require a Bachelor's degree in Computer Science. <br></br>
+        Entry-level Systems Administrators typically earn around $70,000 per year. <br></br>
+        Would you like the NEXT steps you could take to explore administering systems, 
+        or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+      <category>
+        <pattern>NEXT</pattern>
+        <template>
+        Strengthen your understanding in networking, operating systems, and server management.<br></br>
+        Practice setting up and maintaining systems in virtual lab environments.<br></br>
+        Consider earning certifications, such as CompTIA Network+ or Linux certifications.<br></br>
+        Practical experience managing systems and troubleshooting issues will prepare you for this career.
+        Are you SATISFIED with our session, or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+    </topic>
+
+<!-- Web Developer Selection-->
+    <category>
+      <pattern>5</pattern>
+      <template>
+        <think><set name="topic">webDeveloper</set></think>
+        Great choice!
+        If you also enjoy integrating front-end with back-end functionalities
+        you may enjoy being a Web Developer!<br></br>
+        Would you like MORE information on jobs in web developing?<br></br>
+        Or would you like to explore OTHER careers?
+      </template>
+    </category>
+    
+    <category>
+        <pattern>DESIGNING *</pattern>
+        <template>
+            <srai>5</srai>
+        </template>
+    </category>
+    
+    <topic name ="webDeveloper">
+        
+      <category>
+          
+        <pattern>MORE</pattern>
+        <template>
+        A Web Developer builds and designs websites and web applications to ensure functionality, performance, and user experience. <br></br>
+        Most employer's require a Bachelor's degree in Computer Science, along with knowledge of HTML, CSS, and JavaScript. <br></br>
+        Entry-level Web Developers typically earn around $65,000 per year. <br></br>
+        Would you like the NEXT steps you could take to explore web development, 
+        or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+      <category>
+        <pattern>NEXT</pattern>
+        <template>
+        Strengthen your skills in HTML, CSS and JavaScript.<br></br>
+        Build and deploy websites and web applications to create a portfolio.<br></br>
+        Learn modern frameworks such as React or Angular.<br></br>
+        Demonstrate your technical and creative abilities with a strong online portfolio.
+        Are you SATISFIED with our session, or would you like to explore OTHER careers?
+        </template>
+      </category>
+      
+    </topic>
+    
+  
+</aiml>
+
