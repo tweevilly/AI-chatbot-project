@@ -1,13 +1,13 @@
 # Intro to Artificial Intelligence 
 **WESTERN GOVENORS UNIVERSITY**
-C951 |Task1 | Virtual Career Advisor Chatbot
+C951 | Task1 | Virtual Career Advisor Chatbot
 
 ## About
 A rule-based chatbot built with [AIML](https://en.wikipedia.org/wiki/AIML) on the [Pandorabots](https://www.pandorabots.com/) platform. 
 Maki acts as a virtual career advisor for computer science students, helping them explore computing careers that match their interests through a guided, decision-tree conversation.
-Maki is a conversational AI chatbot developed as part of an Artificial Intelligence and Machine Learning (AIML) coursework project.
 
 ## Objective ##
+
   Implement fundamental AIML concepts in a real-world application
   Build a functional conversational AI system
   Demonstrate Natural Language Processing techniques
@@ -15,6 +15,7 @@ Maki is a conversational AI chatbot developed as part of an Artificial Intellige
   Explore intelligent response generation
 
 ## Key Features  ##
+
   Natural language input processing
   Intent recognition
   Automated response generation
