@@ -8,22 +8,23 @@ Maki acts as a virtual career advisor for computer science students, helping the
 
 ## Objective ##
 
-  Implement fundamental AIML concepts in a real-world application
-  Build a functional conversational AI system
-  Demonstrate Natural Language Processing techniques
-  Design structured dialogue handling
-  Explore intelligent response generation
+  Implement fundamental AIML concepts in a real-world application </br>
+  Build a functional conversational AI system </br>
+  Demonstrate Natural Language Processing techniques </br>
+  Design structured dialogue handling </br>
+  Explore intelligent response generation </br>
 
 ## Key Features  ##
 
-  Natural language input processing
-  Intent recognition
-  Automated response generation
-  Rule-based / ML-based logic (update based on your implementation)
-  Interactive conversational interface
+  Natural language input processing </br>
+  Intent recognition </br>
+  Automated response generation </br>
+  Rule-based / ML-based logic (update based on your implementation) </br>
+  Interactive conversational interface </br>
   
 ## Overview
-The scenario: a university's computer science program has grown too large for career advisors to meet individually with every student. Maki simulates a short advising session — greeting the student, identifying their area of interest, and recommending a matching career path with salary expectations, education requirements, and concrete next steps — without requiring a human advisor to be present.
+The scenario: a university's computer science program has grown too large for career advisors to meet individually with every student. 
+Maki simulates a short advising session — greeting the student, identifying their area of interest, and recommending a matching career path with salary expectations, education requirements, and concrete next steps — without requiring a human advisor to be present.
 
 ## Conversation flow
 1. **Greeting** — any input triggers a welcome message introducing Maki as a virtual career advisor and asks the student to confirm they'd like to begin (`YES`).
