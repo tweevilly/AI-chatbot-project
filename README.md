@@ -1,8 +1,12 @@
-# AI-chatbot-project
-Conversational AI chatbot developed as a class project. It demonstrates natural language processing concepts and chatbot design principles.
+# Intro to Artificial Intelligence 
+** WESTERN GOVENORS UNIVERSITY**
+AI Chatbot Application
+
+## About
+Conversational AI chatbot designed to demonstrate natural language processing concepts and chatbot design principles.
 
 Maki is a conversational AI chatbot developed as part of an Artificial Intelligence and Machine Learning (AIML) coursework project.
-The chatbot is designed to simulate human-like interaction by processing user input and generating relevant responses.
+The chatbot is designed to simulate a human-like interaction by processing user input and generating relevant responses.
 
  ## Objective ##
   Implement fundamental AIML concepts in a real-world application
