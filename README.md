@@ -1,5 +1,5 @@
 # Intro to Artificial Intelligence 
-** WESTERN GOVENORS UNIVERSITY**
+**WESTERN GOVENORS UNIVERSITY**
 AI Chatbot Application
 
 ## About
